@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body class="font-body bg-dark-cyan h-full body-bg">
+    <!-- wrapper -->
+    <div class="flex items-center justify-center w-full h-full">
+      <!-- main container -->
+      <main
+        class="bg-white w-[16.125rem] md:w-[18.75rem] rounded-lg overflow-hidden text-dark-grayish-blue my-5 mx-3 shadow-2xl"
+      >
+        <!-- card header -->
+        <header class="relative mb-10 flex justify-center h-28 md:h-auto">
+          <div class="h-full w-full">
+            <img
+              src="./images/bg-pattern-card.svg"
+              alt=""
+              class="object-cover h-full w-full"
+            />
+          </div>
+          <div
+            class="absolute -bottom-[2.75rem] rounded-full overflow-hidden w-[5.5rem] h-[5.5rem] bg-white flex items-center justify-center"
+          >
+            <img
+              src="./images/image-victor.jpg"
+              alt=""
+              class="w-11/12 rounded-full"
+            />
+          </div>
+        </header>
+        <!-- profile main info -->
+        <div
+          class="flex flex-col items-center border-b border-dark-gray border-opacity-20 py-[1.125rem] gap-1"
+        >
+          <div>
+            <h1 class="inline-block font-bold text-dark-des-blue mr-1">
+              Victor Crest
+            </h1>
+            <span>26</span>
+          </div>
+          <div><h2 class="text-xs">London</h2></div>
+        </div>
+        <!-- profile stats -->
+        <div class="flex justify-evenly text-center py-[1.125rem]">
+          <div>
+            <span class="text-dark-des-blue font-bold">80K</span>
+            <h3 class="text-[0.5rem] tracking-widest">Followers</h3>
+          </div>
+          <div>
+            <span class="text-dark-des-blue font-bold">803K</span>
+            <h3 class="text-[0.5rem] tracking-widest">Likes</h3>
+          </div>
+          <div>
+            <span class="text-dark-des-blue font-bold">1.4K</span>
+            <h3 class="text-[0.5rem] tracking-widest">Photos</h3>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
