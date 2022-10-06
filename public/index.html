@@ -13,15 +13,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Frontend Mentor | Profile card component</title>
   </head>
-  <body class="font-body bg-dark-cyan h-full body-bg">
+  <body class="font-body h-full bg-dark-cyan">
     <!-- wrapper -->
-    <div class="flex items-center justify-center w-full h-full">
+    <div
+      class="flex items-center justify-center w-full h-full relative overflow-hidden"
+    >
+      <!-- bg top -->
+      <img
+        src="./images/bg-pattern-top.svg"
+        alt="top background"
+        class="absolute top-0 left-0 -translate-x-[45%] -translate-y-1/2 md:-translate-x-[30%] md:-translate-y-1/2"
+      />
+      <!-- bg bottom -->
+      <img
+        src="./images/bg-pattern-bottom.svg"
+        alt="bottom background"
+        class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/4 md:translate-x-[18%] md:translate-y-2/3"
+      />
       <!-- main container -->
       <main
-        class="bg-white w-[16.125rem] md:w-[18.75rem] rounded-lg overflow-hidden text-dark-grayish-blue my-5 mx-3 shadow-2xl"
+        class="bg-white w-80 rounded-xl text-lg overflow-hidden text-dark-grayish-blue my-5 mx-3 shadow-2xl z-10"
       >
         <!-- card header -->
-        <header class="relative mb-10 flex justify-center h-28 md:h-auto">
+        <header class="relative mb-10 flex justify-center h-36 md:h-auto">
           <div class="h-full w-full">
             <img
               src="./images/bg-pattern-card.svg"
@@ -30,7 +44,7 @@
             />
           </div>
           <div
-            class="absolute -bottom-[2.75rem] rounded-full overflow-hidden w-[5.5rem] h-[5.5rem] bg-white flex items-center justify-center"
+            class="absolute bottom-0 translate-y-1/2 rounded-full overflow-hidden w-24 h-24 bg-white flex items-center justify-center"
           >
             <img
               src="./images/image-victor.jpg"
@@ -41,7 +55,7 @@
         </header>
         <!-- profile main info -->
         <div
-          class="flex flex-col items-center border-b border-dark-gray border-opacity-20 py-[1.125rem] gap-1"
+          class="flex flex-col items-center border-b border-dark-gray border-opacity-20 py-5 gap-2"
         >
           <div>
             <h1 class="inline-block font-bold text-dark-des-blue mr-1">
@@ -52,18 +66,18 @@
           <div><h2 class="text-xs">London</h2></div>
         </div>
         <!-- profile stats -->
-        <div class="flex justify-evenly text-center py-[1.125rem]">
+        <div class="flex justify-evenly text-center py-5 leading-6">
           <div>
             <span class="text-dark-des-blue font-bold">80K</span>
-            <h3 class="text-[0.5rem] tracking-widest">Followers</h3>
+            <h3 class="text-[0.625rem] tracking-widest">Followers</h3>
           </div>
           <div>
             <span class="text-dark-des-blue font-bold">803K</span>
-            <h3 class="text-[0.5rem] tracking-widest">Likes</h3>
+            <h3 class="text-[0.625rem] tracking-widest">Likes</h3>
           </div>
           <div>
             <span class="text-dark-des-blue font-bold">1.4K</span>
-            <h3 class="text-[0.5rem] tracking-widest">Photos</h3>
+            <h3 class="text-[0.625rem] tracking-widest">Photos</h3>
           </div>
         </div>
       </main>
